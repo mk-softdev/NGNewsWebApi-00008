@@ -1,0 +1,14 @@
+<div class="container container-fluid mt-5">
+    <h4>Top Headlines</h4>
+    <div class="row">
+<div *ngFor="let item of topHeadingDisplay" class="col-lg-3 mt-3 mb-3">
+    <div class="box">
+        <h5 class="mt-2 mb-2">{{item.title}}</h5>
+        <img src="{{item.urlToImage}}" alt="" width="100%" class="mb-2">
+        <!-- <p>{{item.description}}</p> -->
+        <a href="{{item.url}}" target="_blank" class="btn btn-dark btn-sm">Read more...</a>
+    </div>
+    
+</div>
+</div>
+</div>
